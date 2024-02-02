@@ -1,0 +1,78 @@
+main{
+    
+    background-image: url("/assets/Images/chebka.png");
+    background-position: left;
+}
+.left , .right{
+    padding: 5vw;
+    padding-bottom: 2vw;
+}
+.container{
+    background: linear-gradient(to right, transparent 0%,var(--mainColor) 55%, var(--mainColor) 100%);
+    backdrop-filter: blur(10px);
+}
+.left img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-size: 3em;
+    line-height: 1.4;
+    color: var(--secondColor);
+}
+#overview{
+    font-size: 1em;
+    color: var(--secondColor);
+    text-align: justify;
+}
+#price{
+    height: 100%;
+    text-align: center;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 7px 15px 7px 15px;
+    color: var(--secondColor);
+    background-color: var(--mainColor);
+    border-radius:49% 51% 64% 36% / 32% 44% 56% 68% ;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7px;
+}
+.priceDIV{
+    padding:0;
+    margin-top: 2em;
+    background-color: var(--secondColor);
+    border-radius:0% 100% 100% 0% / 0% 55% 45% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+.btnDIV{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+button{
+    margin-top: 2em;
+    padding: 7px 15px 7px 15px;
+    background-color: var(--secondColor);
+    color: var(--mainColor);
+    border-radius: 5px;
+    border-color: var(--3thColor);
+    transition-duration: 500ms;
+}
+button:hover{
+    border-radius: 0;
+    border-color: var(--mainColor);
+    background-color: var(--mainColor);
+    color: var(--secondColor);
+}

@@ -1,0 +1,17 @@
+<div class="c_container">
+    <div class="cart_page row col-sm-9">
+        <div class="p1 col-sm-8">
+            <div class="cart_main">
+                <div class="h1 sum_header"><h3>&nbsp;Shopping Cart</h3></div>
+                <app-cart-produit *ngFor="let row of cartItems" class="col-sm-10" [row]="row" ></app-cart-produit>
+            </div>
+            
+        </div>
+        <div class="p2 col-sm-4">
+            <div class="cart_aside">
+                <div class="h2 sum_header"><h3>&nbsp;Summary</h3></div>
+                <div>Total <span>{{Total}}</span></div>
+            </div>
+        </div>
+    </div>
+</div>

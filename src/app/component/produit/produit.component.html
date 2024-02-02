@@ -1,0 +1,13 @@
+<div class="col-sm-4 product">
+    <div (click)="navigateToProduct(product.id)" class="product1" [id]="product.id">
+        <img src="{{getImgUrl()}}" alt="">
+        <h2>{{product.name | uppercase}}</h2>
+        <div class="detaills">
+            <ul>
+                <li>
+                    {{getPrice()}}
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

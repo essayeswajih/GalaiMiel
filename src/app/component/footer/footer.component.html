@@ -1,1 +1,13 @@
-<p>footer works!</p>
+<footer>
+    <div class="block1">
+        <div *ngFor="let item of dataList">
+            {{item.category}}
+            <ul>
+                <li *ngFor="let e of item.items"><a [href]="e.url">{{e.elem}}</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="block2">
+        <p>Galai Miel © 2024 All rights reserved</p>
+    </div>
+</footer>

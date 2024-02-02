@@ -1,0 +1,118 @@
+.example-container mat-form-field + mat-form-field {
+    margin-left: 8px;
+  }
+  form{
+    background-color: var(--secondColor);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px var(--secondColor);
+  }
+  main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100vw;
+    height: 80vh;
+    background-image: url("/assets/Images/chebka.png") !important;
+    background-position: center;
+  }
+  
+  
+  .ema {
+    color: var(--secondColor);
+    background-color: var(--mainColor) !important;
+    height: 120px;
+    border-radius: 30px;
+    margin: 5px !important;
+    width: 360px;
+    box-shadow: 0px 0px 7px var(--mainColor);
+  }
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+  td {
+    padding-right: 8px;
+  }
+  mat-error{
+    color: red;
+  }
+  input{
+    background-color: var(--thirdColor) !important;
+    color: var(--secondColor) !important;
+    padding-left: 10px;
+    font-size:x-small;
+    outline: none;
+    border:none;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    border-bottom: .5px solid var(--secondColor);
+  }
+  input::placeholder{
+    color: var(--thirdColor) !important;
+    font-size: small;
+  }
+  label{
+    margin-right: 10px;
+  }
+  .chekb{
+    margin-top: 10px !important;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    font-weight: 550;
+  }
+  input[type="checkbox"]+label{
+    background-color: var(--mainColor) !important;
+    cursor: pointer;
+    text-shadow: 0px 0px .5px var(--mainColor);
+  }
+  .mat-mdc-form-field-infix ng-tns-c1205077789-2{
+    height: 30px none;
+  }
+  .register{
+    margin-top: 10px !important;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    width: 45%;
+   a{
+     color: var(--thirdColor);
+     font-weight: 500;
+     font-size: small;
+     text-shadow: 0px 0px .5px var(--mainColor);
+   }
+   display: flex;
+   flex-direction: row-reverse;
+  }
+  .btn{
+    padding: 12px 40px !important;
+    background-color: var(--mainColor);
+    border-radius: 15px;
+    color: var(--secondColor);
+    box-shadow: 0px 0px 7px var(--mainColor);
+  }
+  .cont{
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
+    width: 100%;
+  }
+  .wb{
+    font-weight: 700;
+    margin-bottom: 12px;
+    font-size:medium;
+  }

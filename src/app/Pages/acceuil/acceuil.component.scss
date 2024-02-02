@@ -1,0 +1,154 @@
+.col{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+}
+.d{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/assets/Images/chebka.png") !important;
+    background-position: center;
+    //background-repeat: no-repeat;
+    backdrop-filter: blur(10px);
+}
+.c{
+    background-color: var(--mainColor);
+    backdrop-filter: blur(5px);
+}
+.row{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.prodNav{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.u{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    background-color: var(--3thColor);
+    height: 25px;
+    font-weight: 400;
+    width: max-content;
+}
+.u li{
+    color: var(--secondColor);
+    width: 150px;
+    font-size: .9rem;
+}
+
+.l21:hover{
+    cursor: pointer;
+    .u21{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        background-color: var(--secondColor);
+        flex-direction: column;
+    }
+    .u21 li{
+        background-color: var(--secondColor);
+        display:auto;
+    }
+
+}
+.l22:hover{
+    cursor: pointer;
+    .u22{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        background-color: var(--secondColor);
+        flex-direction: column;
+    }
+    .u22 li{
+        background-color: var(--secondColor);
+        display:auto;
+    }
+}
+.l23:hover{
+    cursor: pointer;
+    .u23{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: var(--secondColor);
+    }
+    .u23 li{
+        background-color: var(--secondColor);
+    }
+}
+
+.u23,.u22,.u21{
+    list-style: none;
+    display: none;
+    margin-top: 20px;
+    padding: 7px;
+}
+.u23 li,.u22 li,.u21 li{
+    padding: .01rem .03rem .01rem .03rem;
+    padding-left: .3em;
+    color: var(--mainColor);
+    width: 145px;
+    display: flex;
+    font-size: .8em;
+    font-weight: 500;
+}
+.u23 li:hover,.u22 li:hover,.u21 li:hover{
+    background-color: var(--mainColor) !important;
+    color: var(--secondColor);
+}
+.u{
+    display: flex;
+    justify-content: center;
+}
+.l11:hover,.l21:hover,.l31:hover{
+    cursor: pointer;
+    text-shadow: 0.0rem 0.0rem 1px var(--secondColor);
+}
+.l11{
+    width: 70px !important;
+}
+ul.u21,ul.u22,ul.u23{
+    margin-top: 0px !important;
+    padding: .5rem;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    height: auto;
+    padding:2.5px;
+    z-index: 3;
+}
+.divLight{
+    top:10px;
+    border: 5px solid var(--secondColor);
+    background-color: var(--mainColor) !important;
+    border-radius: 35px;
+    height: auto;
+    padding: 1px;
+    width: 90px;
+    position: absolute;
+    z-index: 2;
+    right:10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-image: none;
+    box-sizing: border-box;
+    transition-duration: 1s;
+}
+.d{
+    justify-content: flex-end !important;
+}

@@ -1,0 +1,14 @@
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--3thColor);
+    color: var(--secondColor);
+    outline: none;
+    border: 2px solid var(--secondColor);
+    border-radius: 30px;
+    height: 25px !important;
+    width: 50px !important;
+    font-size: 12px;
+    box-shadow: 0px 0px 7px var(--secondColor);
+}

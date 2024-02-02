@@ -1,0 +1,42 @@
+<main>
+    <form action="">
+      <div class="wb">
+        WELCOME 
+      </div>
+      <div class="example-container">
+        <mat-form-field class="ema">
+          <div>
+            <label for="email">Full Name</label>
+            <input matInput id="email" placeholder="galai Miel" [formControl]="email" required>
+            <app-err-msg *ngIf="email.invalid" [err]="getEmailErrorMessage()"></app-err-msg>
+          </div>
+        </mat-form-field>
+        <mat-form-field class="ema">
+          <div>
+            <label for="email">Adress</label>
+            <input matInput id="email" placeholder="Tunis" [formControl]="email" required>
+            <app-err-msg *ngIf="email.invalid" [err]="getEmailErrorMessage()"></app-err-msg>
+          </div>
+        </mat-form-field>
+      </div>
+      <div class="example-container">
+        <mat-form-field class="ema">
+          <label for="email">Email</label>
+          <input matInput id="email" placeholder="galai@example.com" [formControl]="email" required>
+          <app-err-msg *ngIf="email.invalid" [err]="getEmailErrorMessage()"></app-err-msg>
+        </mat-form-field>
+        <mat-form-field class="ema">
+          <label for="password">Password</label>
+          <input matInput type="password" id="password" [formControl]="password" placeholder="Enter your password" required>
+          <app-err-msg *ngIf="password.invalid" [err]="getPasswordErrorMessage()"></app-err-msg>
+        </mat-form-field>
+      </div>
+
+      <div class="center">
+        <button class="btn" type="button" (click)="login()">register</button>
+      </div>
+
+
+    </form>
+  </main>
+  

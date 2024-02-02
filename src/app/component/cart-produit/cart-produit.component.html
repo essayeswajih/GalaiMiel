@@ -1,0 +1,28 @@
+<div class="cartProduit" [id]="row?.id">
+    
+    <div class="col-sm-3 b1">
+        <div class="imgProduit col-sm-12">
+            <img src="/assets/Images/product.jpg" alt="produit">
+        </div>
+    </div>
+
+    <div class="col-sm-6 b2">
+        <div class="col-sm-12 nomP">
+            {{row?.name}}
+        </div>
+        <div class="col-sm-12 descP">
+            {{row?.desc}}
+        </div>
+    </div>
+    <div class="col-sm-3 b3">
+        <div class="col-sm-6 qte" >
+            <button id="addProd">+</button>
+            <input type="text" name="prodNumber" id="prodNumber">
+            <button id="remProd">-</button>
+        </div>
+        <div class="col-sm-6 price">
+            <span class="dinar">{{row?.prix}} DT</span>
+        </div>
+    </div>
+    <button class="remouve">x</button>
+</div>

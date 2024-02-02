@@ -1,0 +1,103 @@
+#contactMainDiv{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    //background-color: #0c0c0c;
+    background-color: var(--3thColor);
+    box-shadow: 0 0 10px var(--secondColor);
+    //border-radius: 20px;
+    border: 1px solid var(--secondColor);
+    background-image: url("/assets/Images/chebka.png");
+}
+.ContactContainer{
+    justify-content: center;
+    padding-top: 70px;
+    background-image: url("/assets/Images/chebka.png") !important;
+}
+.leftDiv,.MidDiv,.rightDiv{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.MidDiv{
+    border-right: 1px solid var(--secondColor);
+    border-left: 1px solid var(--secondColor);
+
+}
+.rightDiv{
+    background-image: url("/assets/Images/ContactImg.gif");
+}
+app-contact-list{
+ height: 100%;   
+}
+p{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+label{
+    
+    color: var(--secondColor);
+}
+input[type=text],input[type=email]{
+    outline: none;
+    border: none;
+    font-size: 1em;
+    border-bottom: .05em solid var(--secondColor);
+    background-color: var(--3thColor);
+    padding-left: 15px;
+    color: var(--secondColor);
+    height: 40px;
+    width: 400px;
+    margin-left: 0px;
+}
+input[type=text]:hover,input[type=email]:hover{
+    background-color: var(--mainColor);
+}
+textarea{
+    width: 400px;
+    height: 150px;
+    background-color: var(--3thColor);
+    border: 1px solid var(--secondColor);
+    margin-left: 0px;
+    color: var(--secondColor);
+    padding: 10px;
+}
+textarea:focus{
+    outline: none;
+    border: 1px solid var(--secondColor);
+    box-shadow: 0 0 10px var(--secondColor);
+}
+.filed{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+input[type=submit]{
+    background-color: var(--mainColor);
+    border: 1px solid var(--secondColor);
+    color: var(--secondColor);
+    margin: 20px;
+    padding: 10px;
+    width: 100px;
+    transition-duration: 600ms !important;
+}
+
+input[type=submit]:hover{
+    color: var(--mainColor);
+    background-color: var(--secondColor);
+    box-shadow: 0 0 10px var(--secondColor);
+}
+.MidDiv{
+    padding-top: 40px;
+}
+h4{
+    color:var(--secondColor);
+}
+app-contact-lis{
+    height: 100%;
+
+}

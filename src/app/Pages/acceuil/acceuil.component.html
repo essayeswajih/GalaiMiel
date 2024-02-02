@@ -1,0 +1,24 @@
+<div class="d row col-sm-12" style="height:auto">
+    <div class="prodNav">
+          <ul class="u col-sm-5">
+            <li *ngFor="let category of navArray.categories" [class]="category.className" (click)="navigateToUrl(category.name)">
+            {{ category.name }}
+            <ul *ngIf="category.subcategories && category.subcategories.className" [class]="category.subcategories.className">
+                <li *ngFor="let element of category.elm" [class]="element.className">
+                {{ element.name }}
+                </li>
+            </ul>
+            </li>
+        </ul>
+        <div class="divLight"><app-light></app-light></div>
+    </div>
+    <div class="row c col-sm-10" >
+        <div class="row" data-aos="fade-up" data-aos-once="true">
+            <div *ngFor="let product of allProducts" class="col-sm-4">
+                <app-produit [id]="product.id" class="col-sm-12" [product]="product" ></app-produit>
+            </div>
+        </div>
+
+    </div>
+
+</div>

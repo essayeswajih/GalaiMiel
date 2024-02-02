@@ -1,0 +1,2 @@
+npm init -y
+npm i express body-parser cors mysql2 bcrypt express-session

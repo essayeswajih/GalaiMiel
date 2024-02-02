@@ -1,0 +1,22 @@
+
+<main class="row">
+    <div class="container row col-sm-12">
+        <div class="left col-sm-6">
+            <img [src]="getImgUrl()" alt="">
+        </div>
+        <div class="right col-sm-6">
+            <h1 id="title">{{product?.name}}</h1>
+            <div class="description">
+                <p id="overview">{{product?.description}}</p>
+            </div>
+            <div class="priceDIV">
+                <p id="price">{{getPrice()}}</p>
+            </div>
+            <div class="btnDIV">
+                <button type="submit" onclick="addToCart()">Add to cart</button>
+            </div>
+            
+        </div>
+    </div>
+
+</main>

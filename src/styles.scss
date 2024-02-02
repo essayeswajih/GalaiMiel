@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'bootstrap/scss/bootstrap';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --mainColor: #111;        //#ddd  or #FFF3E0      111    
+    --secondColor: #cd874e;  //#cd874e
+    --3thColor:rgb(10,10,10); //cdcdcd      //rgb(10,10,10)
+}
+body{
+    background-color: var(--mainColor) !important;
+    font-family:"Roboto";
+    //font-family:"Lato";
+    //font-family:"Playfair Display";
+    //font-family:"Dancing Script"; 
+
+}
+
+/* Importing Bootstrap SCSS file. */
+::-webkit-scrollbar {
+    display: none;
+  }
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color: transparent !important;
+    border-radius: 30px;
+  }

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import * as aos from 'aos';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Galai_Miel';
+  ngOnInit() {
+    aos.init();
+  }
 }
